@@ -211,7 +211,7 @@ static int service_request(int sock) {
 	}
 
 #ifdef WANT_IPV6
-	laddr6 = laddr;
+	laddr6 = laddr;		// save old sockaddr
 	faddr6 = faddr;
 
 	if (laddr.ss_family == AF_INET6 && IN6_IS_ADDR_V4MAPPED(&SIN6(&laddr)->sin6_addr)) {
