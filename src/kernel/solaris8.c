@@ -3,7 +3,7 @@
 **
 ** Copyright (c) 1995-1999	Casper Dik <Casper.Dik@Holland.Sun.COM>
 ** Copyright (c) 1997		Peter Eriksson <pen@lysator.liu.se>
-** Copyright (c) 2001-2002	Ryan McCabe <odin@numb.org>
+** Copyright (c) 2001-2003	Ryan McCabe <ryan@numb.org>
 **
 ** This program is free software; you can redistribute it and/or
 ** modify it as you wish - as long as you don't claim that you wrote
@@ -14,8 +14,6 @@
 ** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 **
 ** For now, only support IPv4 for Solaris 8
-**
-** $Id$
 */
 
 #include <config.h>

@@ -41,5 +41,3 @@ a privileged ioctl to lookup connection owners and NAT information.
 For information regarding setting the user and group that oidentd will run as,
 please see the descriptions of the "--user" and "--group" command-line
 flags in the oidentd manual page.
-
-$Id$

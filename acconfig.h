@@ -1,8 +1,5 @@
 /*
-**
 ** See src/oidentd.h for more user-configurable values
-**
-** $Id$
 */
 
 #undef PACKAGE

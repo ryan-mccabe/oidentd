@@ -1,5 +1,3 @@
-# $Id$
-
 INCLUDES = -I../../src
 
 noinst_LIBRARIES = libmissing.a

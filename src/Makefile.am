@@ -1,5 +1,3 @@
-# $Id$
-
 SUBDIRS = missing
 sbin_PROGRAMS = oidentd
 

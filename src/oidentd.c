@@ -1,6 +1,6 @@
 /*
 ** oidentd.c - oidentd ident (rfc1413) implementation.
-** Copyright (C) 1998-2002 Ryan McCabe <odin@numb.org>
+** Copyright (C) 1998-2003 Ryan McCabe <ryan@numb.org>
 **
 ** This program is free software; you can redistribute it and/or modify
 ** it under the terms of the GNU General Public License, version 2,
@@ -14,8 +14,6 @@
 ** You should have received a copy of the GNU General Public License
 ** along with this program; if not, write to the Free Software
 ** Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA
-**
-** $Id$
 */
 
 #define _GNU_SOURCE
@@ -211,7 +209,7 @@ static int service_request(int sock) {
 	}
 
 #ifdef WANT_IPV6
-	laddr6 = laddr;		// save old sockaddr
+	laddr6 = laddr;
 	faddr6 = faddr;
 
 	if (laddr.ss_family == AF_INET6 && IN6_IS_ADDR_V4MAPPED(&SIN6(&laddr)->sin6_addr)) {

@@ -1,7 +1,4 @@
 /*
-**
-** $Id$
-**
 ** Copyright (C) 1987,88,89,90,91,92,93,94,95,96,98,99,2000,2001
 ** Free Software Foundation, Inc.
 ** This file is part of the GNU C Library.
@@ -21,7 +18,7 @@
 ** Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
 ** 02111-1307 USA.
 **
-** Code cleanup for oidentd Copyright (C) 2001-2002 Ryan McCabe <odin@numb.org>
+** Code cleanup for oidentd Copyright (C) 2001-2003 Ryan McCabe <ryan@numb.org>
 */
 
 #include <config.h>
