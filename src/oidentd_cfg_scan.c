@@ -288,14 +288,14 @@ static void yy_fatal_error YY_PROTO(( yyconst char msg[] ));
 	*yy_cp = '\0'; \
 	yy_c_buf_p = yy_cp;
 
-#define YY_NUM_RULES 37
-#define YY_END_OF_BUFFER 38
+#define YY_NUM_RULES 36
+#define YY_END_OF_BUFFER 37
 static yyconst short int yy_accept[130] =
     {   0,
-        0,    0,   24,   24,    0,    0,   38,   35,    2,   29,
+        0,    0,   24,   24,    0,    0,   37,   35,    2,   29,
        22,    3,   35,   35,   35,   35,   35,   35,   35,   35,
        35,   35,   35,   35,    1,   24,   25,   34,   28,   27,
-       37,   35,    2,    3,    3,   23,   35,   35,   35,   35,
+       36,   35,    2,    3,    3,   23,   35,   35,   35,   35,
        35,   35,   35,   35,   35,   35,   35,   35,    7,   35,
        24,   25,   25,   26,   34,   33,   30,   32,   33,   35,
        35,   35,   35,   35,   35,   35,   35,   35,   35,   35,
@@ -1095,16 +1095,9 @@ YY_RULE_SETUP
 case 36:
 YY_RULE_SETUP
 #line 306 "./oidentd_cfg_scan.l"
-{
-	return (-1);
-}
-	YY_BREAK
-case 37:
-YY_RULE_SETUP
-#line 310 "./oidentd_cfg_scan.l"
 ECHO;
 	YY_BREAK
-#line 1108 "oidentd_cfg_scan.c"
+#line 1101 "oidentd_cfg_scan.c"
 case YY_STATE_EOF(INITIAL):
 case YY_STATE_EOF(state_comment):
 case YY_STATE_EOF(state_string):
@@ -1996,7 +1989,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 310 "./oidentd_cfg_scan.l"
+#line 306 "./oidentd_cfg_scan.l"
 
 
 /*
