@@ -7,9 +7,6 @@ LDADD =-Lmissing -lmissing
 
 DISTCLEANFILES = \
 	stamp_parse \
-	oidentd_cfg_scan.c \
-	oidentd_cfg_parse.h \
-	oidentd_cfg_parse.c \
 	os.c
 
 oidentd_SOURCES = \
