@@ -155,11 +155,6 @@ struct sockaddr_storage {
 	#define ss_family __ss_family
 #endif
 
-int get_user(	in_port_t lport,
-				in_port_t fport,
-				struct sockaddr_storage *laddr,
-				struct sockaddr_storage *faddr);
-
 int get_user4(	in_port_t lport,
 				in_port_t fport,
 				struct sockaddr_storage *laddr,
