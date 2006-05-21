@@ -1,6 +1,6 @@
 /*
 ** openbsd30.c - Low level kernel access functions for OpenBSD 3.0 and greater
-** Copyright (C) 2001-2003 Ryan McCabe <ryan@numb.org>
+** Copyright (C) 2001-2006 Ryan McCabe <ryan@numb.org>
 **
 ** This program is free software; you can redistribute it and/or modify
 ** it under the terms of the GNU General Public License, version 2,
@@ -57,6 +57,15 @@
 extern struct sockaddr_storage proxy;
 
 /*
+** System dependend initialisation. Call only once!
+** On failure, return false.
+*/
+
+bool core_init(void) {
+	return (true);
+}
+
+/*
 ** Return the UID of the connection owner
 */
 
@@ -75,12 +84,11 @@ int get_user4(	in_port_t lport,
 
 	tir.faddr.ss_family = AF_INET;
 	tir.faddr.ss_len = sizeof(struct sockaddr);
+	fin = (struct sockaddr_in *) &tir.faddr;
+	fin->sin_port = fport;
 
-	if (!opt_enabled(PROXY) || !sin_equal(faddr, &proxy)) {
-		fin = (struct sockaddr_in *) &tir.faddr;
+	if (!opt_enabled(PROXY) || !sin_equal(faddr, &proxy))
 		memcpy(&fin->sin_addr, &SIN4(faddr)->sin_addr, sizeof(struct in_addr));
-		fin->sin_port = fport;
-	}
 
 	tir.laddr.ss_family = AF_INET;
 	tir.laddr.ss_len = sizeof(struct sockaddr);
