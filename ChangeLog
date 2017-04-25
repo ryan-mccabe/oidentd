@@ -1,3 +1,21 @@
+Thu Aug 18 22:42:50 BST 2011	Chris Taylor <chris@equate.dyndns.org>
+
+    * Add handling for nf_conntrack_acct being off (Thanks to Jonas Gorski)
+
+Tue Apr 10 22:14:00 BST 2006    Simon Arlott <oidentd@fire.lp0.eu>
+
+    * Fix bug handling NAT with a different destination port on Linux.
+
+    * Fix forwarding when the destination port is different.
+
+    * Add an option that does forwarding only if the masquerading file lookup fails.
+
+    * Support Layer 3 Independent Connection tracking on Linux.
+
+    * Handle local NAT on Linux (instead of fowarding to self).
+
+    * Copy fport before converting v4-mapped v6 addresses.
+
 Mon May 22 00:20:15 EDT 2006    Ryan McCabe <ryan@numb.org>
 
     * Released as version 2.0.8.
